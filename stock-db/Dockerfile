@@ -1,6 +1,6 @@
 FROM postgres:latest
 
-ENV POSTGRES_DB=users
+ENV POSTGRES_DB=stock
 ENV POSTGRES_USER=nhoona
 ENV POSTGRES_PASSWORD=nhoona
 
@@ -14,4 +14,4 @@ VOLUME ["/var/lib/postgresql/data"]
 
 RUN chmod -R 755 /docker-entrypoint-initdb.d/
 
-EXPOSE 5600
+EXPOSE 5601
