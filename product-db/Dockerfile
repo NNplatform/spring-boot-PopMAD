@@ -1,6 +1,6 @@
 FROM postgres:latest
 
-ENV POSTGRES_DB=users
+ENV POSTGRES_DB=product
 ENV POSTGRES_USER=nhoona
 ENV POSTGRES_PASSWORD=nhoona
 

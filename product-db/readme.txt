@@ -1,2 +1,2 @@
-docker volume create auth-db-postgres
-docker run -dp 5600:5432 -v auth-db-postgres:/var/lib/postgresql/data auth-database
+docker volume create product-db-postgres
+docker run -dp 5602:5432 -v product-db-postgres:/var/lib/postgresql/data product-database
