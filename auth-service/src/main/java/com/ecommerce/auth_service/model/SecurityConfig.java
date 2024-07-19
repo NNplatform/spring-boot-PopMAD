@@ -1,4 +1,4 @@
-package com.ecommerce.auth_service;
+package com.ecommerce.auth_service.model;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,11 +13,11 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/hello").permitAll()
+                .csrf().disable()
+                .authorizeHttpRequests(authorize -> authorize
+                        .requestMatchers("/login", "/logout", "/userById/*").permitAll()
                         .anyRequest().authenticated()
-                )
-                .csrf().disable();
+                );
         return http.build();
     }
 }

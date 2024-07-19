@@ -1,6 +1,6 @@
 package com.ecommerce.auth_service.dto;
 
-public class LoginRequest {
+public class LoginRequestForm {
     private String email;
     private String password;
 
