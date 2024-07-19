@@ -1,13 +1,11 @@
-package com.ecommerce.auth_service;
+package com.ecommerce.auth_service.model;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class AuthServiceApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(AuthServiceApplication.class, args);
 	}
-
 }
