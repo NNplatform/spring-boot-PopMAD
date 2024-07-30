@@ -1,6 +1,7 @@
 package com.ecommerce.auth_service.repository;
 
 import com.ecommerce.auth_service.model.User;
+import com.ecommerce.auth_service.model.Role;
 import org.springframework.stereotype.Repository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -28,6 +29,17 @@ public class UserRepository {
             e.printStackTrace();
             throw new UserNotFoundException("-1", "User not found with ID: " + id);
         }
+    }
+
+    private static final String GET_ROLES_BY_USER_ID =
+            "SELECT r.* FROM roles r " +
+                    "JOIN user_roles ur ON r.id = ur.role_id " +
+                    "WHERE ur.user_id = :userId";
+
+    public Role findRolesByUserId(Long userId) {
+        return (Role) entityManager.createNativeQuery(GET_ROLES_BY_USER_ID, Role.class)
+                .setParameter("userId", userId)
+                .getSingleResult();
     }
 
     private static final String GET_USER_BY_EMAIL =
