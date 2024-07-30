@@ -10,13 +10,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//@RequestMapping("/auth")
+@RequestMapping("/auth")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @GetMapping("/userById/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<JsonResponse> getUserById(@PathVariable Long id) {
         JsonResponse response = userService.getUserById(id);
         return ResponseEntity.ok(response);
