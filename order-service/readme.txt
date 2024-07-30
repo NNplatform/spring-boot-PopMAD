@@ -1,0 +1,1 @@
+docker run -dp 8081:8081 product-service

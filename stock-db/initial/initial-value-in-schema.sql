@@ -1,11 +1,12 @@
-INSERT INTO stock (stock_id, product_id, product_name, category, quantity, price, supplier, received_date, reorder_level, location) VALUES
-(1, 1, 'Gold Ring', 'Ring', 50, 299.99, 'Golden Suppliers Inc.', '2024-01-15', 10, 'A1'),
-(2, 2, 'Silver Necklace', 'Necklace', 30, 199.99, 'Silverline Suppliers', '2024-02-10', 5, 'B2'),
-(3, 3, 'Diamond Earrings', 'Earrings', 20, 499.99, 'Diamond Deluxe', '2024-03-05', 8, 'C3'),
-(4, 4, 'Platinum Bracelet', 'Bracelet', 15, 899.99, 'Platinum Pro', '2024-04-20', 3, 'D4'),
-(5, 5, 'Gold Pendant', 'Pendant', 40, 249.99, 'Golden Suppliers Inc.', '2024-05-15', 12, 'A2'),
-(6, 6, 'Ruby Ring', 'Ring', 25, 349.99, 'Ruby Rich', '2024-06-10', 7, 'B3'),
-(7, 7, 'Emerald Necklace', 'Necklace', 35, 399.99, 'Emerald Elegance', '2024-07-05', 6, 'C4'),
-(8, 8, 'Sapphire Earrings', 'Earrings', 10, 549.99, 'Sapphire Selections', '2024-08-20', 4, 'D1'),
-(9, 9, 'Gold Bracelet', 'Bracelet', 22, 599.99, 'Golden Suppliers Inc.', '2024-09-15', 9, 'A3'),
-(10, 10, 'Diamond Pendant', 'Pendant', 18, 799.99, 'Diamond Deluxe', '2024-10-10', 5, 'B1');
+INSERT INTO stock (stock_id, product_id, product_name, category, quantity, supplier, received_date, reorder_level, location)
+VALUES
+(1, 1, 'Golden Bear', 'Collectible Figures', 100, 'ToyWonders Inc.', '2024-01-01', 20, 'Warehouse A'),
+(2, 2, 'Silver Bunny', 'Vinyl Toys', 100, 'VinylMasters Co.', '2024-01-02', 25, 'Warehouse B'),
+(3, 3, 'Diamond Dragon', 'Collectible Figures', 100, 'DragonCrafters Ltd.', '2024-01-03', 15, 'Warehouse A'),
+(4, 4, 'Platinum Phoenix', 'Figurines', 100, 'LuxeToys Corp.', '2024-01-04', 10, 'Warehouse C'),
+(5, 5, 'Gold Panda', 'Blind Box Figures', 100, 'PandaWonders Inc.', '2024-01-05', 30, 'Warehouse B'),
+(6, 6, 'Ruby Rabbit', 'Collectibles', 100, 'GemAnimals Co.', '2024-01-06', 20, 'Warehouse A'),
+(7, 7, 'Emerald Elephant', 'Collectible Figures', 100, 'JungleTreasures Ltd.', '2024-01-07', 18, 'Warehouse C'),
+(8, 8, 'Sapphire Shark', 'Vinyl Toys', 100, 'OceanWonders Inc.', '2024-01-08', 15, 'Warehouse B'),
+(9, 9, 'Gold Gorilla', 'Collectible Figures', 100, 'PrimateCollectibles Co.', '2024-01-09', 12, 'Warehouse A'),
+(10, 10, 'Diamond Deer', 'Figurines', 100, 'ForestGems Ltd.', '2024-01-10', 10, 'Warehouse C');

@@ -4,7 +4,6 @@ CREATE TABLE IF NOT EXISTS stock (
     product_name VARCHAR(100),
     category VARCHAR(50),
     quantity INT,
-    price DECIMAL(10, 2),
     supplier VARCHAR(100),
     received_date DATE,
     reorder_level INT,

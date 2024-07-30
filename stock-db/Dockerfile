@@ -4,10 +4,10 @@ ENV POSTGRES_DB=stock
 ENV POSTGRES_USER=nhoona
 ENV POSTGRES_PASSWORD=nhoona
 
-COPY drop /docker-entrypoint-initdb.d/1_drop
-COPY schema /docker-entrypoint-initdb.d/2_schema
-COPY index /docker-entrypoint-initdb.d/3_index
-COPY initial /docker-entrypoint-initdb.d/4_initial
+COPY drop/*.sql /docker-entrypoint-initdb.d/01-drop.sql
+COPY schema/*.sql /docker-entrypoint-initdb.d/02-schema.sql
+COPY index/*.sql /docker-entrypoint-initdb.d/03-index.sql
+COPY initial/*.sql /docker-entrypoint-initdb.d/04-initial.sql
 
 #COPY ./schema/create-schema.sql /docker-entrypoint-initdb.d/
 VOLUME ["/var/lib/postgresql/data"]
