@@ -59,8 +59,8 @@ public class AdminService {
         List<Wishlist> wishlist = jsonResponse.getResult();
 
         AdminResult result = new AdminResult();
-        result.setTotalUser(Long.valueOf(3)); //mock
-        result.setPendingUser(Long.valueOf(3)); //mock
+        result.setTotalUser(Long.valueOf(0)); //mock
+        result.setPendingUser(Long.valueOf(0)); //mock
         result.setOrderedUser(Long.valueOf(orders.size()));
         result.setAttemptDepletedProductUser(Long.valueOf(wishlist.size()));
         return new JsonResponse<>("0", "successful", null, result);
